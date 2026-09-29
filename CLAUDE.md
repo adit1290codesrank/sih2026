@@ -77,7 +77,7 @@ The code is done; the remaining work is running it and presenting results.
 - **Always say:** "trained on US GLM lightning, adapted to INSAT/GFS, not yet verified against Indian lightning observations".
 - **India maps** use Survey of India boundaries (official depiction), never Natural Earth.
   - The file is `data/boundaries/india_states.geojson`: SoI OVSF/1M/7 state boundaries, reprojected to lat/lon.
-  - It is not in git; share it directly. Bhuvan only serves boundaries as images (its WFS is disabled).
+  - It is committed (derived, simplified, attributed); the raw SoI zip is not. Bhuvan only serves boundaries as images (its WFS is disabled).
 
 ## Team workflow
 - Commit with `/commit-and-push`. It asks which branch to push to and shows the message first.
