@@ -82,5 +82,5 @@ The code is done; the remaining work is running it and presenting results.
 ## Team workflow
 - Commit with `/commit-and-push`. It asks which branch to push to and shows the message first.
 - Commit messages are short and plain. No `Co-Authored-By`, and no mention of Claude, AI or the model.
-- The website is built in `web/` on its own branch (`romir-web`). Web branches never edit main-owned files (everything outside `web/`).
+- The website is built in `web/`, on a branch cut from main. Web branches never edit main-owned files (everything outside `web/`).
 - `site/` is the static data for the site: `cases.json`, plus the `public/data/` output of `scripts/export_site.py`. Don't touch it without prior permission.
