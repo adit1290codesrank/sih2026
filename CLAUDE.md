@@ -72,10 +72,12 @@ The code is done; the remaining work is running it and presenting results.
 ## Rules
 - **Cut order if short on time:** pySTEPS → tier-2 hours 5–6 → radar-only control → burst.
 - **Never cut:** the scorecard, one India run, and the honest label.
-- **Never commit** `shards/ work/ runs/ ext/ *.pt`. Run `pytest -q` (35 pass) before committing.
+- **Never commit** `shards/ work/ runs/ ext/ *.pt`. Run `pytest -q` (38 pass) before committing.
 - **Report numbers as measured.** Compare models at equal `samples`.
 - **Always say:** "trained on US GLM lightning, adapted to INSAT/GFS, not yet verified against Indian lightning observations".
-- **India maps** use ISRO Bhuvan boundaries, never Natural Earth.
+- **India maps** use Survey of India boundaries (official depiction), never Natural Earth.
+  - The file is `data/boundaries/india_states.geojson`: SoI OVSF/1M/7 state boundaries, reprojected to lat/lon.
+  - It is not in git; share it directly. Bhuvan only serves boundaries as images (its WFS is disabled).
 
 ## Team workflow
 - Commit with `/commit-and-push`. It asks which branch to push to and shows the message first.
