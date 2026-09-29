@@ -60,11 +60,14 @@ The code is done; the remaining work is running it and presenting results.
 - HRRR sfc has no `RH:700 mb` → use 700 mb dewpoint depression.
 - GFS lacks LTNG, MXUPHL and VUCSH/VVCSH. Shear = V500 − V10m.
 - `--resume` keeps the checkpoint's horizon (`data.t_in / t_out / out_step`).
+- The INSAT reader works on real MOSDAC `3RIMG_L1B_STD` files (checked 29 Sep 2026).
+  - It agrees with GK2A on the same tile: correlation 0.87 (IR) and 0.84 (WV); INSAT reads ~2.7 K warmer.
+  - `Acquisition_Start_Time` is ~35 s after the nominal time in the file name.
 
 ## Not yet verified or done
-- The INSAT reader and the ISS-LIS converter on real files.
-- The pySTEPS baseline.
-- A figure script for the slides (STEPS.md step 13).
+- The ISS-LIS converter on real files.
+- The pySTEPS baseline (cut).
+- Verification against Indian lightning: ILDN data has been requested.
 
 ## Rules
 - **Cut order if short on time:** pySTEPS → tier-2 hours 5–6 → radar-only control → burst.
