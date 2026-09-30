@@ -47,8 +47,8 @@ The code is done; the remaining work is running it and presenting results.
 **India CLI:** `python -m nowcast.india.run --city X --time T --gk2a --tier1 ... --tier2 ... --switch-hour N`
 
 ## Hardware
-- **Primary (4060 Ti 16 GB):** data build, overnight tier 1 (`configs/dev.yaml`), tier 2, evaluation, India runs.
-- **Burst (2× 5090, 3 h, 16 GB SSD):** `scripts/burst.sh all`.
+- **Primary (RTX 5060 Ti 16 GB, server admo@idi):** data build, overnight tier 1 (`configs/dev.yaml`), tier 2, evaluation, India runs.
+- **Burst (2× 5090, 3 h, 16 GB SSD):** `scripts/burst.sh all`. Not used: the submission is the overnight model.
   - Everything is kept in `/dev/shm`.
   - torch must match the primary's version exactly, with cu128.
   - If the burst fails, use the overnight model.
